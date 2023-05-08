@@ -16,7 +16,6 @@
     --DarkBlue: hsl(249, 10%, 26%);
     --DarkBlueShadow: hsl(249, 10%, 26%, .2);
     --GrayishBlue: hsl(246, 25%, 77%);
-    --White: hsl(0, 0%, 100%);
     --WhiteOpacity: hsl(0, 0%, 100%, .8);
 }
 
@@ -64,13 +63,11 @@ svg {
 .subscription p {
     font-weight: 400;
     color: var(--WhiteOpacity);
-    opacity: .8;
 }
 
 .subscription p span {
-    color: var(--White);
+    color: #fff;
     font-weight: 600;
-    opacity: 1;
 }
 
 .signup-form {
