@@ -130,12 +130,12 @@ svg {
     margin-bottom: 1rem;
 }
 
-.signup-form p {
-    color: lightgray;
+.signup-form .conditions p {
+    color: hsla(0, 0%, 61%, 0.8);
     font-size: .7rem;
 }
 
-.signup-form p span {
+.signup-form .conditions p span {
     color: var(--Red);
     font-weight: 700;
 }
