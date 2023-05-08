@@ -10,11 +10,14 @@
 :root {
     --Red: hsl(0, 100%, 74%);
     --Green: hsl(154, 59%, 51%);
+    --HoverGreen: hsl(154, 65%, 68%);
     --BlackGreen: hsl(153, 59%, 46%);
     --Blue: hsl(248, 32%, 49%);
     --DarkBlue: hsl(249, 10%, 26%);
     --DarkBlueShadow: hsl(249, 10%, 26%, .2);
     --GrayishBlue: hsl(246, 25%, 77%);
+    --White: hsl(0, 0%, 100%);
+    --WhiteOpacity: hsl(0, 0%, 100%, .8);
 }
 
 svg {
@@ -60,11 +63,12 @@ svg {
 
 .subscription p {
     font-weight: 400;
-    color: #fff;
+    color: var(--WhiteOpacity);
     opacity: .8;
 }
 
 .subscription p span {
+    color: var(--White);
     font-weight: 600;
     opacity: 1;
 }
@@ -224,6 +228,11 @@ svg {
         cursor: pointer;
         font-size: 1rem;
         padding-top: .5rem;
+    }
+
+    .right-container .signup-form form button:hover{
+        background-color: var(--HoverGreen);
+        box-shadow: 0 8px 0 hsl(153, 51%, 61%);
     }
     
     .right-container .signup-form .conditions{
